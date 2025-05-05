@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨Millicent Ochieng</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo"><strong>Millicent</strong><span>Ochieng</span> ©</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Jblog.html">Blog</a></li>
+                <li><a href="Jabout.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="#newsletter" class="subscribe-btn">Subscribe</a>
+            <button id="darkToggle" class="toggle-btn">🌙</button>
+        </div>
+    </header>
+
+    <!--hero section-->
+    <section class="blog-hero">
+        <div class="blog-hero-overlay">
+            <div class="blog-hero-content">
+                <h1>Explore, Reflect & Connect</h1>
+                <p>Insights, ideas, and inspiration for the curious mind — from tech trends to real-life adventures.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--latest blogs section-->
+    <section class="latest-blogs">
+        <h2>Latest <em>Blogs</em></h2>
+        <!--image gallery 1-->
+        <div class="blog-grid" id="gallery1">
+            <div class="blog-card">
+                <img src="img/wearable_tech.jpg" alt="Tech blog image" />
+                <div class="blog-content">
+                    <a href="#" class="blog-category">Technology</a>
+                    <h3>The Future of Wearable Tech: Innovations Shaping Our Lives</h3>
+                    <div class="blog-meta">February 13, 2025 &nbsp;&nbsp; | &nbsp;&nbsp; No Comments</div>
+                </div>
+            </div>
+
+
+
+            <div class="blog-card">
+                <img src="img/marketing.jpg" alt="Marketing trends blog image" />
+                <div class="blog-content">
+                    <a href="#" class="blog-category">Marketing</a>
+                    <h3>Navigating Social Media Trends: What Marketers Need to Know in 2025</h3>
+                    <div class="blog-meta">February 13, 2025 &nbsp;&nbsp; | &nbsp;&nbsp; No Comments</div>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="img/wellness.jpg" alt="Wellness blog image" />
+                <div class="blog-content">
+                    <a href="#" class="blog-category">Wellness</a>
+                    <p>Learn how to balance screen time, manage burnout, and build mindful habits for a sustainable dev
+                        life.</p>
+                    <div class="blog-meta">February 13, 2025 &nbsp;&nbsp; | &nbsp;&nbsp; No Comments</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Pagination-->
+        <div class="pagination">
+            <a href="pagegallery2.html" class=" prev-link">←previous</a>
+            <a href="Jblog.html" class="page-btn" data-page="1">1</a>
+            <a href="pagegallery2.html" class="page-btn" data-page="2">2</a>
+
+        </div>
+
+
+
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="newsletter">
+        <div class="newsletter-text">
+            <h2>Let’s learn, explore, and thrive <em>together!</em></h2>
+            <p>Connect with 4000+ like-minded individuals and be part of a community that values growth, curiosity, and
+                empowerment.</p>
+        </div>
+        <div class="newsletter-form">
+            <form action="https://formspree.io/f/mbloogle" method="POST" class="newsletter-form">
+                <input type="email" name="email" placeholder="Add your e-mail" required>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-left">
+            <p>Crafted with 💻 by <strong>Millicent Ochieng</strong> &copy;</p>
+
+        </div>
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="Jblog.html">Blog</a>
+            <a href="Jabout.html">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
