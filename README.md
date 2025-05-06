@@ -24,7 +24,7 @@ Ensure semantic correctness.
 
 Good luck and happy coding! 🚀💻
 
-
+### THE ASSIGNMENT RADME
 
  ## Tech Blog Website
 A responsive and modern tech blog website built with HTML, CSS, and JavaScript. It features sections like Hero, About, Blog Posts, and a Scroll-to-Top button with light/dark theme toggle.
@@ -62,19 +62,19 @@ A responsive and modern tech blog website built with HTML, CSS, and JavaScript. 
 └── img/
    
 ## 📸 Screenshots
-- Homepage-![Website Screenshot](img/landing_pagescreenshot.png)
+- Homepage-![Website Screenshot](img/landing_pagescreeenshot.png)
 - Darkmode-![Website Screenshot](img/darkmode_screenshot.png)
 - Mobile view-![Website Screenshot](img/smaller_device_view_screenshot.png)
 
 ## 🚀 Live Demo
 
-[Click here to view the live site](https://your-username.github.io/tech-blog/)
+[Click here to view the live site](https://plp-webtechnologies.github.io/feb-2025-final-project-and-deployment-Ocheing/)
 
  
 ## 🧑‍💻 Setup Instructions
 - Clone the repository:
 
-git clone https://github.com/yourusername/tech-blog.git
+git clone https://github.com/PLP-WebTechnologies/feb-2025-final-project-and-deployment-Ocheing.git
 Open index.html in your browser.
 
 ✅ No dependencies or build tools needed—just open and go!
