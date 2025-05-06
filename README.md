@@ -24,7 +24,7 @@ Ensure semantic correctness.
 
 Good luck and happy coding! 🚀💻
 
-### THE ASSIGNMENT RADME
+### THE ASSIGNMENT README
 
  ## Tech Blog Website
 A responsive and modern tech blog website built with HTML, CSS, and JavaScript. It features sections like Hero, About, Blog Posts, and a Scroll-to-Top button with light/dark theme toggle.
