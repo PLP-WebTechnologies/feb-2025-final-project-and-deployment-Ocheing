@@ -5,23 +5,15 @@ toggleBtn.addEventListener('click', () => {
 
 
   // Show/hide scroll-to-top button
-  const scrollTopBtn = document.querySelector('.scroll-top');
+  const scrollBtn = document.getElementById('scrollTopBtn');
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      scrollTopBtn.style.display = 'block';
-    } else {
-      scrollTopBtn.style.display = 'none';
-    }
+    scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
   });
 
-  // Smooth scroll to top
-  scrollTopBtn.addEventListener('click', (e) => {
+  scrollBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
   //image gallery blog 

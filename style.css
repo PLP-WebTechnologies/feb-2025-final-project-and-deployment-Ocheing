@@ -1,10 +1,21 @@
 :root {
-    --bg-light: #f4f6f2;
-    --bg-dark: #1b2e2a;
-    --text-light: #222;
-    --text-dark: #eee;
-    --accent: #5a7d68;
-    --beige: #e7e5d9;
+    --bg-light: #eaf2fb;
+    --bg-dark: #112233;
+    --text-light: #1e2a38;
+    --text-dark: #f1f5f9;
+    --accent: #3a7bd5;
+    --beige: #d0e4ff;
+}
+
+/* Dark mode overrides */
+.dark-mode {
+    --text-light: #f0f0f0;
+    --bg-dark: #121212;
+    --bg-light: #1e1e1e;
+    --accent: #4fc3f7;
+    /* Optional accent color for dark mode */
+    --beige: #333333;
+    /* Optional dark beige for dark mode */
 }
 
 * {
@@ -21,6 +32,7 @@ body {
     line-height: 1.6;
 }
 
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -63,17 +75,17 @@ body {
 }
 
 .subscribe-btn {
-    background: #5a7d68;
+    background: var(--accent);
     border: 1px solid var(--text-light);
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-weight: bold;
     transition: background 0.3s, color 0.3s;
-    color: #1f1e1d;
+    color: white;
 }
 
 .subscribe-btn:hover {
-    background-color: var(--accent);
+    background-color: #2a5cab;
     color: white;
 }
 
@@ -122,7 +134,7 @@ body {
 }
 
 .cta-btn:hover {
-    background-color: #456353;
+    background-color: #2a5cab;
 }
 
 /* DARK MODE */
@@ -132,7 +144,7 @@ body.dark-mode {
 }
 
 body.dark-mode .navbar {
-    background-color: #2e3f3b;
+    background-color: #1a2c48;
 }
 
 body.dark-mode .nav-links a {
@@ -142,6 +154,7 @@ body.dark-mode .nav-links a {
 body.dark-mode .subscribe-btn {
     border-color: var(--text-dark);
     color: var(--text-dark);
+    background-color: transparent;
 }
 
 body.dark-mode .subscribe-btn:hover {
@@ -150,7 +163,7 @@ body.dark-mode .subscribe-btn:hover {
 }
 
 body.dark-mode .hero {
-    background-color: #2e3f3b;
+    background-color: #1a2c48;
 }
 
 /* RESPONSIVE */
@@ -174,9 +187,9 @@ body.dark-mode .hero {
     }
 }
 
-/*network section*/
+/* NETWORK SECTION */
 .network-section {
-    background-color: #dbe5dc;
+    background-color: #d7e7fb;
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -205,15 +218,15 @@ body.dark-mode .hero {
     font-size: 2rem;
     margin-bottom: 2rem;
     font-weight: bold;
-    color: #1e3d32;
+    color: #2a4f77;
 }
 
 .network-text h2 span {
-    color: #5a7d68;
+    color: var(--accent);
 }
 
 .network-text em {
-    color: #8a9a87;
+    color: #6a91b3;
     font-style: italic;
 }
 
@@ -231,7 +244,7 @@ body.dark-mode .hero {
 
 .stat i {
     font-size: 2rem;
-    color: #5a7d68;
+    color: var(--accent);
     margin-bottom: 0.5rem;
 }
 
@@ -240,35 +253,35 @@ body.dark-mode .hero {
     font-weight: bold;
 }
 
-/* Dark mode */
+/* DARK MODE NETWORK SECTION */
 body.dark-mode .network-section {
-    background-color: #2e3f3b;
+    background-color: #1a2c48;
 }
 
 body.dark-mode .network-text h2,
 body.dark-mode .stat p {
-    color: #e0e0e0;
+    color: #d8eaff;
 }
 
 body.dark-mode .stat i {
-    color: #d4e7db;
+    color: #85b4f1;
 }
 
-/*featuredsection*/
+/* Featured Section */
 .featured-blogs {
     padding: 4rem 2rem;
-    background-color: #e6eae4;
+    background-color: var(--beige);
     text-align: center;
 }
 
 .featured-blogs h2 {
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
-    color: #1e3d32;
+    color: var(--text-light);
 }
 
 .featured-blogs em {
-    color: #758d7c;
+    color: #5b89c2;
     font-style: italic;
 }
 
@@ -280,8 +293,8 @@ body.dark-mode .stat i {
 }
 
 .blog-card {
-    background-color: #f5f6f4;
-    border: 1px solid #d0d9ce;
+    background-color: #f4f9ff;
+    border: 1px solid #b7d0ea;
     border-radius: 8px;
     overflow: hidden;
     max-width: 350px;
@@ -305,61 +318,61 @@ body.dark-mode .stat i {
 
 .blog-info h3 {
     font-size: 1.1rem;
-    color: #2e4e3f;
+    color: var(--text-light);
     margin-bottom: 1rem;
     line-height: 1.5;
 }
 
 .blog-info a {
     text-decoration: none;
-    color: #7a927d;
+    color: #5a91cc;
     font-weight: bold;
     font-size: 0.95rem;
     transition: color 0.2s ease;
 }
 
 .blog-info a:hover {
-    color: #526d5d;
+    color: #3a7bd5;
 }
 
 /* Dark mode */
 body.dark-mode .featured-blogs {
-    background-color: #2f3f38;
+    background-color: #1c2e4d;
 }
 
 body.dark-mode .featured-blogs h2,
 body.dark-mode .blog-info h3 {
-    color: #f0f0f0;
+    color: var(--text-dark);
 }
 
 body.dark-mode .blog-card {
-    background-color: #3a4c45;
-    border-color: #4e6159;
+    background-color: #1f344f;
+    border-color: #3c5c84;
 }
 
 body.dark-mode .blog-info a {
-    color: #c8dbc9;
+    color: #a4c7ec;
 }
 
 body.dark-mode .blog-info a:hover {
-    color: #a8c2ae;
+    color: #85b2e5;
 }
 
-/*passion section*/
+/* Passion Section */
 .passions {
     padding: 4rem 2rem;
-    background-color: #dad6c9;
+    background-color: #d6e6fb;
     text-align: center;
 }
 
 .passions h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #2c2c2c;
+    color: var(--text-light);
 }
 
 .passions h2 em {
-    color: #898468;
+    color: #5a88ba;
     font-style: italic;
 }
 
@@ -371,7 +384,7 @@ body.dark-mode .blog-info a:hover {
 }
 
 .passion-card {
-    background-color: #f0eee5;
+    background-color: #eef6ff;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
@@ -386,8 +399,8 @@ body.dark-mode .blog-info a:hover {
     width: 60px;
     height: 60px;
     margin: 0 auto 1rem;
-    background-color: #e5e2d5;
-    border: 2px solid #c5c1b0;
+    background-color: #c6def6;
+    border: 2px solid #a2c3e8;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -402,19 +415,19 @@ body.dark-mode .blog-info a:hover {
 
 .passion-card h3 {
     font-size: 1.2rem;
-    color: #2c2c2c;
+    color: var(--text-light);
     margin-bottom: 0.5rem;
 }
 
 .passion-card p {
     font-size: 0.95rem;
-    color: #4e4e4e;
+    color: #4e6279;
 }
 
 .view-all-btn {
     display: inline-block;
     padding: 0.8rem 2rem;
-    background-color: #938c6f;
+    background-color: var(--accent);
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -423,53 +436,53 @@ body.dark-mode .blog-info a:hover {
 }
 
 .view-all-btn:hover {
-    background-color: #7a735d;
+    background-color: #275ca6;
 }
 
-/* Dark Mode */
+/* Dark mode */
 body.dark-mode .passions {
-    background-color: #2f2f29;
+    background-color: #192a44;
 }
 
 body.dark-mode .passions h2,
 body.dark-mode .passion-card h3,
 body.dark-mode .passion-card p {
-    color: #f2f2f2;
+    color: var(--text-dark);
 }
 
 body.dark-mode .passion-card {
-    background-color: #3a3a33;
+    background-color: #223a59;
 }
 
 body.dark-mode .icon-circle {
-    background-color: #555044;
-    border-color: #7a755e;
+    background-color: #3a4e6a;
+    border-color: #5b7fa8;
 }
 
 body.dark-mode .view-all-btn {
-    background-color: #6f6b53;
+    background-color: #5c9dee;
 }
 
 body.dark-mode .view-all-btn:hover {
-    background-color: #5e5a45;
+    background-color: #3c7fc5;
 }
 
-/*latst blog section*/
+/* Latest Blog Section */
 .latest-blogs {
     padding: 4rem 2rem;
-    background-color: #e5e1d3;
+    background-color: #e1eefc;
     text-align: center;
 }
 
 .latest-blogs h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #2c2c2c;
+    color: var(--text-light);
 }
 
 .latest-blogs h2 em {
     font-style: italic;
-    color: #8c836c;
+    color: #5887c6;
 }
 
 .blog-grid {
@@ -479,8 +492,8 @@ body.dark-mode .view-all-btn:hover {
 }
 
 .blog-card {
-    background-color: #dedacb;
-    border: 1px solid #cfcab0;
+    background-color: #d8eafc;
+    border: 1px solid #a6c9ea;
     border-radius: 8px;
     overflow: hidden;
     text-align: left;
@@ -502,7 +515,7 @@ body.dark-mode .view-all-btn:hover {
 }
 
 .blog-category {
-    color: #897b5f;
+    color: #4e82ba;
     font-size: 0.9rem;
     text-decoration: underline;
 }
@@ -510,32 +523,32 @@ body.dark-mode .view-all-btn:hover {
 .blog-content h3 {
     font-size: 1.1rem;
     margin: 0.5rem 0 1rem;
-    color: #2c2c2c;
+    color: var(--text-light);
 }
 
 .blog-meta {
     font-size: 0.85rem;
-    color: #5c5c5c;
+    color: #51687d;
 }
 
 /* Dark mode */
 body.dark-mode .latest-blogs {
-    background-color: #2e2d29;
+    background-color: #1d2f4c;
 }
 
 body.dark-mode .latest-blogs h2,
 body.dark-mode .blog-content h3,
 body.dark-mode .blog-meta {
-    color: #f0f0f0;
+    color: var(--text-dark);
 }
 
 body.dark-mode .blog-card {
-    background-color: #3c3b35;
-    border-color: #58574f;
+    background-color: #274368;
+    border-color: #3f5f89;
 }
 
 body.dark-mode .blog-category {
-    color: #ccc0a5;
+    color: #aacbf3;
 }
 
 .blog-button {
@@ -544,7 +557,7 @@ body.dark-mode .blog-category {
 }
 
 .btn-primary {
-    background-color: #6a5d42;
+    background-color: var(--accent);
     color: #fff;
     padding: 0.8rem 2rem;
     text-decoration: none;
@@ -554,20 +567,20 @@ body.dark-mode .blog-category {
 }
 
 .btn-primary:hover {
-    background-color: #4e452f;
+    background-color: #275ca6;
 }
 
 /* Dark mode adaptation */
 body.dark-mode .btn-primary {
-    background-color: #b7a885;
-    color: #222;
+    background-color: #6fa5f5;
+    color: var(--text-dark);
 }
 
 body.dark-mode .btn-primary:hover {
-    background-color: #9a8c6d;
+    background-color: #3f7bd1;
 }
 
-/*Blog setion page*/
+/* Blog Hero Section */
 .blog-hero {
     background: url('img/backgroundblog.avif') center/cover no-repeat;
     height: 100vh;
@@ -581,7 +594,6 @@ body.dark-mode .btn-primary:hover {
 
 .blog-hero-overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    /* Dark transparent overlay for readability */
     width: 100%;
     height: 100%;
     display: flex;
@@ -622,14 +634,15 @@ body.dark-mode .btn-primary:hover {
 }
 
 .page-btn:hover {
-    background-color: #456353;
+    background-color: #275ca6;
 }
 
 .page-btn.active {
-    background-color: #2b4c3a;
+    background-color: #1f447d;
 }
 
-.next-link {
+.next-link,
+.prev-link {
     font-size: 1.2rem;
     color: var(--accent);
     text-decoration: none;
@@ -637,22 +650,12 @@ body.dark-mode .btn-primary:hover {
     padding: 0.5rem 1rem;
 }
 
-.next-link:hover {
-    color: #456353;
-}
-
-.prev-link {
-    font-size: 1.2rem;
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 12px;
-}
-
+.next-link:hover,
 .prev-link:hover {
-    color: #456353;
+    color: #275ca6;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     .blog-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -663,31 +666,34 @@ body.dark-mode .btn-primary:hover {
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
+
+/* Scroll Top */
 .scroll-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #9b8960;
+    bottom: 16px;
+    right: 16px;
+    background-color: #3a7bd5;
     color: #fff;
-    padding: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    /* reduced padding */
     border-radius: 4px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    /* reduced font size */
     display: none;
-    /* Hidden initially */
     transition: background-color 0.3s;
     z-index: 1000;
 }
 
-
 .scroll-top:hover {
-    background-color: #7e6f4a;
+    background-color: #275ca6;
 }
 
-
-
-/* Responsive */
+/* Responsive for Blog Card */
 @media (max-width: 900px) {
     .blog-cad {
         flex: 1 1 calc(50% - 2rem);
@@ -700,9 +706,9 @@ body.dark-mode .btn-primary:hover {
     }
 }
 
-/*about page*/
+/* About Page */
 .about-details {
-    background-color: #ded6c3;
+    background-color: var(--beige);
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -736,24 +742,25 @@ body.dark-mode .btn-primary:hover {
 
 .stat h3 {
     font-size: 2rem;
-    color: #6d5c3d;
+    color: var(--accent);
     margin-bottom: 0.5rem;
 }
 
 .stat p {
     font-size: 1rem;
-    color: #4a4234;
+    color: var(--text-light);
 }
 
-/*my story*/
+/* My Story */
 .my-story {
-    background-color: #ded6c3;
+    background: var(--bg-light);
     padding: 4rem 2rem;
     font-family: 'Georgia', serif;
-    color: #3e3e3e;
+    color: var(--text-light);
+    position: relative;
+    overflow: hidden;
 }
 
-/* Centered heading */
 .story-heading {
     text-align: center;
     margin-bottom: 3rem;
@@ -762,15 +769,14 @@ body.dark-mode .btn-primary:hover {
 .story-heading h2 {
     font-size: 2.5rem;
     line-height: 1.2;
-    color: #2e1f10;
+    color: var(--bg-dark);
 }
 
 .story-heading span {
-    color: #9b8656;
+    color: var(--accent);
     font-style: italic;
 }
 
-/* Grid layout */
 .story-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -781,22 +787,63 @@ body.dark-mode .btn-primary:hover {
     padding: 0 1rem;
 }
 
+.story-image .image-wrapper {
+    position: relative;
+    max-width: 320px;
+    margin: auto;
+}
+
 .story-image img {
     width: 100%;
-    max-width: 320px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 2;
+}
+
+.image-bg-deco {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--accent);
+    border-radius: 10px;
+    z-index: 1;
 }
 
 .story-text p {
     margin-bottom: 1.2rem;
     font-size: 1rem;
-    line-height: 1.6;
-    color: #4a4234;
+    line-height: 1.7;
+    color: var(--text-light);
+    transition: all 0.3s ease;
 }
 
-/* Responsive: stack content */
+.story-text strong {
+    color: var(--bg-dark);
+}
+
+.story-text .highlight {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+/* Simple fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media (max-width: 768px) {
     .story-content {
         grid-template-columns: 1fr;
@@ -814,14 +861,18 @@ body.dark-mode .btn-primary:hover {
     .story-text {
         padding: 0 1rem;
     }
+
+    .image-bg-deco {
+        display: none;
+    }
 }
 
-/*blog mission*/
+/* Blog Mission */
 .blog-mission {
-    background-color: #ded6c3;
+    background-color: var(--beige);
     padding: 4rem 2rem;
     font-family: 'Georgia', serif;
-    color: #3e3e3e;
+    color: var(--text-light);
 }
 
 .mission-content {
@@ -842,25 +893,22 @@ body.dark-mode .btn-primary:hover {
 
 .mission-text h2 {
     font-size: 2.5rem;
-    color: #2e1f10;
+    color: var(--bg-dark);
     margin-bottom: 1rem;
 }
 
 .mission-text h2 span {
     font-style: italic;
-    color: #9b8656;
+    color: var(--accent);
 }
 
 .mission-text p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
-    color: #4a4234;
+    color: var(--text-light);
 }
 
-
-
-/* Responsive tweak */
 @media (max-width: 768px) {
     .mission-content {
         grid-template-columns: 1fr;
@@ -873,12 +921,12 @@ body.dark-mode .btn-primary:hover {
     }
 }
 
-/*journey lovers*/
+/* Journey Lovers */
 .journey-flavors {
-    background-color: #ded6c3;
+    background-color: var(--beige);
     padding: 4rem 2rem;
     font-family: 'Georgia', serif;
-    color: #3e3e3e;
+    color: var(--text-light);
 }
 
 .flavors-content {
@@ -893,12 +941,12 @@ body.dark-mode .btn-primary:hover {
 
 .flavors-text h2 {
     font-size: 2.5rem;
-    color: #2e1f10;
+    color: var(--bg-dark);
     margin-bottom: 1rem;
 }
 
 .flavors-text h2 span {
-    color: #9b8656;
+    color: var(--accent);
     font-style: italic;
 }
 
@@ -906,7 +954,7 @@ body.dark-mode .btn-primary:hover {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1.2rem;
-    color: #4a4234;
+    color: var(--text-light);
 }
 
 .flavors-images {
@@ -931,7 +979,6 @@ body.dark-mode .btn-primary:hover {
     z-index: 2;
 }
 
-/* Responsive styling */
 @media (max-width: 768px) {
     .flavors-content {
         grid-template-columns: 1fr;
@@ -950,14 +997,13 @@ body.dark-mode .btn-primary:hover {
     }
 }
 
-/*wanderlust section*/
-
+/* Wanderlust Section */
 .travel-section {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 80px 40px;
-    background-color: #e7e2d1;
+    background-color: var(--bg-light);
     gap: 60px;
     flex-wrap: wrap;
 }
@@ -983,13 +1029,13 @@ body.dark-mode .btn-primary:hover {
     left: -20px;
     width: 100%;
     height: 100%;
-    border: 1px solid #b6ae9b;
+    border: 1px solid var(--accent);
     z-index: 0;
 }
 
 .travel-text {
     max-width: 450px;
-    color: #2c2c2c;
+    color: var(--text-light);
 }
 
 .travel-text h1 {
@@ -1000,7 +1046,7 @@ body.dark-mode .btn-primary:hover {
 .travel-text h2 {
     font-size: 1.8rem;
     font-style: italic;
-    color: #8c7e60;
+    color: var(--accent);
     margin-bottom: 1em;
 }
 
@@ -1041,12 +1087,9 @@ body.dark-mode .btn-primary:hover {
     }
 }
 
-
-
-
-/* Newsletter Section - Centered and Stacked */
+/* Newsletter Section */
 .newsletter {
-    background: #e9e3d1;
+    background: var(--beige);
     padding: 4rem 2rem;
     text-align: center;
     display: flex;
@@ -1066,13 +1109,13 @@ body.dark-mode .btn-primary:hover {
 .newsletter-form input[type="email"] {
     padding: 1rem;
     font-size: 1rem;
-    border: 1px solid #aaa06c;
-    background-color: #f5f3ea;
+    border: 1px solid var(--accent);
+    background-color: var(--bg-light);
     width: 100%;
 }
 
 .newsletter-form button {
-    background-color: #a49067;
+    background-color: var(--accent);
     color: #fff;
     font-weight: bold;
     padding: 1rem;
@@ -1082,7 +1125,7 @@ body.dark-mode .btn-primary:hover {
 }
 
 .newsletter-form button:hover {
-    background-color: #8a784f;
+    background-color: #2d5fab;
 }
 
 .newsletter-text {
@@ -1100,27 +1143,13 @@ body.dark-mode .btn-primary:hover {
 }
 
 .newsletter-text p {
-    color: #333;
+    color: var(--text-light);
     font-size: 1rem;
 }
 
-/* Dark mode compatibility */
-body.dark-mode .newsletter {
-    background: #2d2c2b;
-    color: #f0e9da;
-}
-
-body.dark-mode .newsletter-form input,
-body.dark-mode .newsletter-form button {
-    background-color: #3b3a39;
-    color: #f0e9da;
-    border: 1px solid #a49067;
-}
-
-
 /* Footer */
 .site-footer {
-    background-color: #f7f3e7;
+    background-color: var(--bg-light);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1137,7 +1166,7 @@ body.dark-mode .newsletter-form button {
 
 .footer-nav a {
     margin: 0 1rem;
-    color: #332f2c;
+    color: var(--text-light);
     text-decoration: none;
 }
 
@@ -1148,23 +1177,23 @@ body.dark-mode .newsletter-form button {
 .footer-socials a {
     margin: 0 0.5rem;
     font-size: 1.2rem;
-    color: #6a5d42;
+    color: var(--accent);
 }
 
-/* Dark mode compatibility */
+/* Dark Mode */
 body.dark-mode .newsletter {
-    background: #2d2c2b;
-    color: #f0e9da;
+    background: var(--bg-dark);
+    color: var(--text-dark);
 }
 
 body.dark-mode .newsletter-form input,
 body.dark-mode .newsletter-form button {
-    background-color: #3b3a39;
-    color: #f0e9da;
-    border: 1px solid #a49067;
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    border: 1px solid var(--accent);
 }
 
 body.dark-mode .site-footer {
-    background-color: #1f1e1d;
-    color: #eee;
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
 }
